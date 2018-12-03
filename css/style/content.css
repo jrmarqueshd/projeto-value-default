@@ -1,0 +1,28 @@
+.main-content{
+    background-color: skyblue;
+    padding: 20px;
+}
+
+.section-content{
+    display: grid;
+    background-color: aliceblue;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "tag-name"
+        "tag-default-value"
+        "tag-description";
+    margin-bottom: 20px;
+    padding: 20px; 
+}
+
+.tag-name{
+    grid-area: tag-name;
+}
+
+.tag-default-value{
+    grid-area: tag-default-value;
+}
+
+.tag-description{
+    grid-area: tag-description;
+}
