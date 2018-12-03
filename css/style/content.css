@@ -1,28 +1,41 @@
 .main-content{
-    background-color: skyblue;
+    background: linear-gradient(175deg, orange, white);
     padding: 20px;
 }
 
-.section-content{
+.main-content > .content-section{
     display: grid;
-    background-color: aliceblue;
-    grid-template-rows: 1fr 1fr 1fr;
+    background-color: papayawhip;
+    grid-template-rows: 50px 1fr 2fr;
     grid-template-areas: 
         "tag-name"
         "tag-default-value"
         "tag-description";
     margin-bottom: 20px;
-    padding: 20px; 
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.tag-name{
+.main-content > .content-section > .section-tag-name{
     grid-area: tag-name;
+    font: 700 20px "Roboto";
+    text-transform: uppercase;
+    border-bottom: 1px solid #000; 
+    margin-bottom: 10px;
 }
+
+.main-content > .content-section > .section-tag-name > ._tag{
+    color: orange;
+    font-size: 30px;
+}
+
 
 .tag-default-value{
     grid-area: tag-default-value;
+    margin-bottom: 20px;
 }
 
 .tag-description{
     grid-area: tag-description;
+    text-indent: 20px;
 }

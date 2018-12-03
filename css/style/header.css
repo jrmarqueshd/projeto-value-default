@@ -1,7 +1,7 @@
 .main-header{
-    background-color: dodgerblue;
     display: grid;
     width: auto;
+    background-color: #fff;
     grid-template-columns: 1fr 51%;
     grid-template-rows: 100px;
     grid-template-areas: "header search";
@@ -11,8 +11,9 @@
 
 .header-logo{
     grid-area: header;
-    color: white;
-    line-height: 100px;
+    font-size: 35px;
+    color: black;
+    line-height: 80px;
     margin-left: 40px;
     text-transform: uppercase;
 }
@@ -20,21 +21,25 @@
 .header-search{
     grid-area: search;
     list-style: none;
+    box-sizing: border-box;
 }
 
 .header-search > .search-item{
     padding-left: 40px;
     line-height: 100px;
+    box-sizing: border-box;
 }
 
 .header-search > .search-item > .item-text{
     width: 51%;
     height: 40px;
     font-size: 30px;
-    border: 2px solid royalblue;
+    border: none;
+    border-bottom: 1px solid orange;
     padding-left: 10px;
     box-sizing: border-box;
     vertical-align: middle;
+    transition-duration: 987ms;
 }
 
 .header-search > .search-item > .item-text::placeholder{
@@ -44,16 +49,30 @@
 }
 
 .header-search > .search-item > .item-text:focus{
-    box-shadow: 0 0 90px royalblue;
+    box-shadow: 0 0 10px orange;
+    box-sizing: content-box;
+    transition-duration: 987ms;
 }
 
 .header-search > .search-item > .item-button{
+    display: inline-block;
     width: 50px;
-    height: 40px;
-    border: 2px solid royalblue;
+    opacity: 0.4;
+    margin-left: 3px;
+    font-size: 30px;
+    transition-duration: 987ms;
+    color: orange;
 }
 
-.header-search > .search-item > .item-button:focus{
-    box-shadow: 0 0 90px royalblue;
+.header-search > .search-item > .item-text:focus + .item-button{
+    opacity: 1;
+    transition-duration: 987ms;
+    margin-left: 10px;
+}
+
+.header-search > .search-item > .item-button:hover{
+    opacity: 1;
+    transition-duration: 987ms;
+    margin-left: 20px;
 }
 

@@ -3,6 +3,5 @@
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    padding: 10px;
-    background-color: mediumturquoise;
+    padding-top: 10px;
 }
