@@ -14,13 +14,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="css/style/body.css">
-    <link rel="stylesheet" href="css/style/header.css">
-    <link rel="stylesheet" href="css/style/content.css">
+    <link rel="stylesheet" href="css/style-desktop/body.css">
+    <link rel="stylesheet" href="css/style-mobile/body-mobile.css">
+    <link rel="stylesheet" href="css/style-desktop/main-header.css">
+    <link rel="stylesheet" href="css/style-mobile/main-header-mobile.css">
+    <link rel="stylesheet" href="css/style-desktop/main-content.css">
+    <link rel="stylesheet" href="css/style-mobile/main-content-mobile.css">
+    <link rel="stylesheet" href="css/style-desktop/main-footer.css">
+    <link rel="stylesheet" href="css/style-mobile/main-footer-mobile.css">
 </head>
 <body>
     <header class="main-header">
-        <img class="header-logo" src="img/_header/logotipo.png" alt="Default Value" title="logo" />
+        <span class="header-logo"><img class="logo-img" src="/img/_header/logo.png" alt="logo" title="Logo Default Value"></span>
         <ul class="header-search">
             <li class="search-item">
                 <input class="item-text" type="text" placeholder="Ex.: li, span, div ..."/>
@@ -31,47 +36,33 @@
     <article class="main-content">
         <section id="li" class="content-section">
             <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
+            <code class="tag-default-value">
+                <samp class="default-properties">background-color: <em class="properties-value">inherit;</em></samp>
+                <samp class="default-properties">position: <em class="properties-value">relative;</em></samp>
+            </code>
             <main class="tag-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima facilis et molestias dolore delectus accusantium. Similique inventore labore adipisci magnam neque reiciendis accusantium nisi, tempora ut, fugiat ab, quas aperiam!
+                    O elemento HTML &lt;li&gt; (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (&lt;ol&gt;), uma lista desordenada (&lt;ul&gt;), ou um menu (&lt;menu&gt;) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
             </main>
         </section>
+
         <section id="li" class="content-section">
             <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
+            <code class="tag-default-value">
+                <samp class="default-properties">background-color: <em class="properties-value">inherit;</em></samp>
+                <samp class="default-properties">position: <em class="properties-value">relative;</em></samp>
+            </code>
             <main class="tag-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
+                    O elemento HTML &lt;li&gt; (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (&lt;ol&gt;), uma lista desordenada (&lt;ul&gt;), ou um menu (&lt;menu&gt;) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
             </main>
-        </section>
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
-            <main class="tag-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
-            </main>
-        </section>
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-                <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
-                <main class="tag-description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
-                </main>
-        </section>
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
-            <main class="tag-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
-            </main>
-        </section>
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <h4 class="tag-default-value">default lorem ipsum lorem ipsum</h4>
-            <main class="tag-description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos praesentium hic, et provident consectetur dicta quo autem, laborum modi delectus non veniam dolorum magni maxime, quasi reiciendis aut optio esse?
-            </main>
-        </section>
+        </section>        
     </article>
+
+    <footer class="main-footer">
+        <ul class="footer-img">
+            <li class="img-social -github"><a href="https://github.com/jrmarqueshd"><i class="fab fa-github-square"></i></a></span></li>
+            <li class="img-social -linkedin"><a href="https://www.linkedin.com/in/gilmar-dos-santos-marques-junior-199429b7/"><i class="fab fa-linkedin"></i></a></span</li>
+            <li class="img-social -facebook"><a href="https://www.facebook.com/JRMarquees"><i class="fab fa-facebook-square"></i></a></span</li>
+        </ul>
+    </footer>
 </body>
 </html>

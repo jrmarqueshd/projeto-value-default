@@ -1,0 +1,14 @@
+@media (max-width: 767px){
+    .main-footer{
+        text-align: center;
+    }    
+
+    .main-footer > .footer-img{
+        float: none;
+        font-size: 65px;
+    }
+    
+    .main-footer > .footer-img > .img-social.-github{
+        margin-right: 2px;
+    }
+}

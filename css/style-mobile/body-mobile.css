@@ -1,0 +1,7 @@
+@media (max-width: 767px){
+    body{
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        padding-top: 0;
+    }
+}

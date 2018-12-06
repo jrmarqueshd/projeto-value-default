@@ -1,0 +1,22 @@
+@media (max-width: 767px){
+    .main-content{
+        background: none;
+        background-image: 
+            linear-gradient(rgb(255, 123, 0), rgb(219, 123, 0));
+        padding: 30px 5px;
+    }
+
+    .main-content > .content-section{
+        grid-template-rows: 50px 0fr 1fr;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 3px solid orange;
+    }
+
+    .tag-description{
+        font-size: 21px;
+    }
+    
+}

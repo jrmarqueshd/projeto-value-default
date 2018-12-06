@@ -6,16 +6,19 @@
     grid-template-rows: 100px;
     grid-template-areas: "header search";
     position: sticky;
-    top: 0;    
+    top: 0;
+}
+
+.header-logo > img{
+    display: none;
 }
 
 .header-logo{
     grid-area: header;
-    font-size: 35px;
-    color: black;
-    line-height: 80px;
-    margin-left: 40px;
-    text-transform: uppercase;
+    width: 100%;
+    background-image: url("/img/_header/logotipo.png");
+        background-repeat: no-repeat;
+    background-position: 10%;
 }
 
 .header-search{
@@ -62,6 +65,7 @@
     font-size: 30px;
     transition-duration: 987ms;
     color: orange;
+    cursor: pointer;
 }
 
 .header-search > .search-item > .item-text:focus + .item-button{

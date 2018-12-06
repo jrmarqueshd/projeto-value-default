@@ -1,0 +1,32 @@
+.main-footer{
+    background-color: #282b33;
+    height: 130px;
+    line-height: 130px;
+}
+
+.main-footer > .footer-img{
+    list-style: none;
+    float: right;
+}
+
+.main-footer > .footer-img > .img-social{
+    display: inline-block;
+    color: rgb(255, 123, 0);
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.main-footer > .footer-img > .img-social a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-footer > .footer-img > .img-social a:hover,
+.main-footer > .footer-img > .img-social a:active,
+.main-footer > .footer-img > .img-social a:focus{
+    text-decoration: none;
+}
+
+.main-footer > .footer-img > .img-social.-github{
+    margin-right: 18px;
+}
