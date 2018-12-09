@@ -12,7 +12,11 @@
 
     }
 
-    .header-logo > .logo-img{
+    .header-logo > .logo-img.-desktop{
+        display: none;
+    }
+
+    .header-logo > .logo-img.-mobile{
         display: inline-block;
     }
 

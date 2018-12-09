@@ -1,0 +1,35 @@
+.main-navigation{
+    background: #282b33;
+    color: white;
+}
+
+.main-navigation > .navigation-list{
+    text-align: center;
+}
+
+.main-navigation > .navigation-list > .list-item{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid rgb(255, 123, 0);
+    margin: 1px -1px;
+    cursor: pointer;
+    transition-duration: 987ms; 
+}
+
+.main-navigation > .navigation-list > .list-item:hover{
+    width: 50px;
+    background-color: rgb(255, 123, 0);
+    border: 1px solid #282b33;
+    color: #282b33;
+    font-weight: bold;
+}
+
+.main-navigation > .navigation-list > .list-item > .item-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    box-sizing: border-box;
+}

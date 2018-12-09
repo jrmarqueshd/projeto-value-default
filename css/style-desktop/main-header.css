@@ -9,16 +9,19 @@
     top: 0;
 }
 
-.header-logo > img{
-    display: none;
-}
-
 .header-logo{
     grid-area: header;
     width: 100%;
-    background-image: url("/img/_header/logotipo.png");
-        background-repeat: no-repeat;
-    background-position: 10%;
+}
+
+.header-logo > .logo-img.-desktop{
+    display: block;
+    width: 200px;
+    margin-left: 8%;
+}
+
+.header-logo > .logo-img.-mobile{
+    display: none;
 }
 
 .header-search{

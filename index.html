@@ -22,10 +22,15 @@
     <link rel="stylesheet" href="css/style-mobile/main-content-mobile.css">
     <link rel="stylesheet" href="css/style-desktop/main-footer.css">
     <link rel="stylesheet" href="css/style-mobile/main-footer-mobile.css">
+    <link rel="stylesheet" href="css/style-desktop/main-navigation.css">
+    <link rel="stylesheet" href="css/style-mobile/main-navigation-mobile.css">
 </head>
 <body>
     <header class="main-header">
-        <span class="header-logo"><img class="logo-img" src="/img/_header/logo.png" alt="logo" title="Logo Default Value"></span>
+        <span class="header-logo">
+            <img class="logo-img -desktop" src="img/_header/logotipo.png" alt="logo" title="Logo Default Value">
+            <img class="logo-img -mobile" src="img/_header/logo.png" alt="logo" title="Logo Default Value">
+        </span>
         <ul class="header-search">
             <li class="search-item">
                 <input class="item-text" type="text" placeholder="Ex.: li, span, div ..."/>
@@ -33,28 +38,39 @@
             </li>
         </ul>
     </header>
-    <article class="main-content">
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <code class="tag-default-value">
-                <samp class="default-properties">background-color: <em class="properties-value">inherit;</em></samp>
-                <samp class="default-properties">position: <em class="properties-value">relative;</em></samp>
-            </code>
-            <main class="tag-description">
-                    O elemento HTML &lt;li&gt; (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (&lt;ol&gt;), uma lista desordenada (&lt;ul&gt;), ou um menu (&lt;menu&gt;) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
-            </main>
-        </section>
 
-        <section id="li" class="content-section">
-            <h1 class="section-tag-name">ul > <span class="_tag">li</span></h1>
-            <code class="tag-default-value">
-                <samp class="default-properties">background-color: <em class="properties-value">inherit;</em></samp>
-                <samp class="default-properties">position: <em class="properties-value">relative;</em></samp>
-            </code>
-            <main class="tag-description">
-                    O elemento HTML &lt;li&gt; (ou a Lista dos Itens de um elemento HTML) é usado para representar um item que faz parte de uma lista. Este item deve estar contido em um elemento pai: uma lista ordenada (&lt;ol&gt;), uma lista desordenada (&lt;ul&gt;), ou um menu (&lt;menu&gt;) e representa uma única entidade dessa lista. Em menus e listas desordenadas a relação de itens é exibida, normalmente, usando pontos de marcação (as bolinhas). Em listas ordenadas eles são, comumente, mostrados com algum contador ascendente - como um número, ou letra - à sua esquerda.
-            </main>
-        </section>        
+    <nav class="main-navigation">
+        <ul class="navigation-list">
+            <li class="list-item"><a href="list/list-a.html" class="item-link">a</a></li>
+            <li class="list-item"><a href="list/list-b.html" class="item-link">b</a></li>
+            <li class="list-item"><a href="list/list-c.html" class="item-link">c</a></li>
+            <li class="list-item"><a href="list/list-d.html" class="item-link">d</a></li>
+            <li class="list-item"><a href="list/list-e.html" class="item-link">e</a></li>
+            <li class="list-item"><a href="list/list-f.html" class="item-link">f</a></li>
+            <li class="list-item"><a href="list/list-g.html" class="item-link">g</a></li>
+            <li class="list-item"><a href="list/list-h.html" class="item-link">h</a></li>
+            <li class="list-item"><a href="list/list-i.html" class="item-link">i</a></li>
+            <li class="list-item"><a href="list/list-j.html" class="item-link">j</a></li>
+            <li class="list-item"><a href="list/list-k.html" class="item-link">k</a></li>
+            <li class="list-item"><a href="list/list-l.html" class="item-link">l</a></li>
+            <li class="list-item"><a href="list/list-m.html" class="item-link">m</a></li>
+            <li class="list-item"><a href="list/list-n.html" class="item-link">n</a></li>
+            <li class="list-item"><a href="list/list-o.html" class="item-link">o</a></li>
+            <li class="list-item"><a href="list/list-p.html" class="item-link">p</a></li>
+            <li class="list-item"><a href="list/list-q.html" class="item-link">q</a></li>
+            <li class="list-item"><a href="list/list-r.html" class="item-link">r</a></li>
+            <li class="list-item"><a href="list/list-s.html" class="item-link">s</a></li>
+            <li class="list-item"><a href="list/list-t.html" class="item-link">t</a></li>
+            <li class="list-item"><a href="list/list-u.html" class="item-link">u</a></li>
+            <li class="list-item"><a href="list/list-v.html" class="item-link">v</a></li>
+            <li class="list-item"><a href="list/list-w.html" class="item-link">w</a></li>
+            <li class="list-item"><a href="list/list-x.html" class="item-link">x</a></li>
+            <li class="list-item"><a href="list/list-y.html" class="item-link">y</a></li>
+            <li class="list-item"><a href="list/list-z.html" class="item-link">z</a></li>
+        </ul>
+    </nav>
+
+    <article id="mainContent" class="main-content">
     </article>
 
     <footer class="main-footer">
@@ -64,5 +80,7 @@
             <li class="img-social -facebook"><a href="https://www.facebook.com/JRMarquees"><i class="fab fa-facebook-square"></i></a></span</li>
         </ul>
     </footer>
+
+    <script type="text/javascript" src="js/mainContent.js"></script>
 </body>
 </html>
