@@ -6,7 +6,7 @@
 .main-content > .content-section{
     display: grid;
     background-color: rgba(255, 255, 255, 0.9);
-    grid-template-rows: 50px 1fr 2fr;
+    grid-template-rows: 50px 1fr auto;
     grid-template-areas: 
         "tag-name"
         "tag-default-value"
@@ -15,6 +15,20 @@
     padding: 20px;
     border-radius: 10px;
     border: 3px solid rgb(255, 123, 0);
+}
+
+.main-content > .content-section._main{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50vh;
+    display: block;
+}
+
+.main-content > .content-section._main > ._main-emoji{
+    font-size: 500%;
+    opacity: 0.5;
+    margin-top: 50px;
 }
 
 .main-content > .content-section > .section-tag-name{
@@ -39,7 +53,7 @@
     border-radius: 10px;
     background-color: #282b33;
     color: white;
-    cursor: none;
+    cursor: pointer;
 }
 
 .tag-default-value > .default-properties{
@@ -52,10 +66,62 @@
     color: white;
 }
 
+.tag-default-value > .default-properties > .properties-value > .value-browser{
+    color: lightgreen;
+}
+
+.tag-default-value > .default-properties > .properties-value > .value-browser::before{
+    content: "/* ";
+}
+
+.tag-default-value > .default-properties > .properties-value > .value-browser::after{
+    content: " */";
+}
+
 .tag-description{
     grid-area: tag-description;
     font-size: 20px;
     text-indent: 20px;
     text-align: justify;
     letter-spacing: 0.01em;
+}
+
+.tag-description > ._tag-opening,
+.tag-description > ._tag-closure{
+    color: #0846ff;
+    background-color: #282b3320;
+    font-weight: bold;
+}
+
+.tag-description > ._tag-opening::before{
+    content: "<";
+    color: #737578;
+}
+
+.tag-description > ._tag-opening::after{
+    content: ">";
+    color: #737578;
+}
+
+.tag-description > ._tag-closure::before{
+    content: "</";
+    color: #737578;
+}
+
+.tag-description > ._tag-closure::after{
+    content: ">";
+    color: #737578;
+}
+
+.tag-description ._tag-attribute{
+    color: green;
+    font-weight: bold;
+}
+
+.tag-description ._tag-attribute::before{
+    content: " ";
+}
+
+.tag-description ._tag-attribute::after{
+    content: '=" "';
 }

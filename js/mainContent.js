@@ -8,7 +8,7 @@ document.querySelectorAll('a').forEach(link =>{
             .then(resp => resp.text())
             .then(html => content.innerHTML = html)
     }
-
 })
+
 
 
