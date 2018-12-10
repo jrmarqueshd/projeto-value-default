@@ -3,6 +3,7 @@
     color: white;
     position: sticky;
     top: 100px;
+    z-index: 1;
 }
 
 .main-navigation .navigation-toggle{
@@ -63,4 +64,64 @@
     text-transform: uppercase;
     color: inherit;
     box-sizing: border-box;
+}
+
+.navigation-search{
+    grid-area: search;
+    list-style: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navigation-search > .search-item{
+    padding-left: 40px;
+    line-height: 100px;
+    box-sizing: border-box;
+}
+
+.navigation-search > .search-item > .item-text{
+    width: 51%;
+    height: 40px;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid orange;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    transition-duration: 987ms;
+}
+
+.navigation-search > .search-item > .item-text::placeholder{
+    font-size: 20px;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+
+.navigation-search > .search-item > .item-text:focus{
+    box-shadow: 0 0 10px orange;
+    box-sizing: content-box;
+    transition-duration: 987ms;
+}
+
+.navigation-search > .search-item > .item-button{
+    display: inline-block;
+    width: 50px;
+    opacity: 0.4;
+    margin-left: 3px;
+    font-size: 30px;
+    transition-duration: 987ms;
+    color: orange;
+    cursor: pointer;
+}
+
+.navigation-search > .search-item > .item-text:focus + .item-button{
+    opacity: 1;
+    transition-duration: 987ms;
+    margin-left: 10px;
+}
+
+.navigation-search > .search-item > .item-button:hover{
+    opacity: 1;
+    transition-duration: 987ms;
+    margin-left: 20px;
 }

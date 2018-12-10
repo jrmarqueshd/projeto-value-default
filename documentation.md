@@ -8,6 +8,11 @@
 
 # tag de avreviações do emmet
 
+## Para iniciar o article para inserir as informações usar:
+```
+section#.content-section
+```
+
 ## Para definir o cabeçalho do conteudo usar:
 ```
 h1.section-tag-name>span._tag
@@ -55,4 +60,14 @@ i._tag-closure
 * Para citar um atributo de tag usar:
 ```
 span._tag-attribute
+```
+
+* Para citar uma palavra com enfase
+```
+em._cite-abbrevitation
+```
+
+* Para citar uma tag com auto-fechamento usar:
+```
+em._tag-auto-closure
 ```

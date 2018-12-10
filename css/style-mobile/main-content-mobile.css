@@ -7,7 +7,7 @@
     }
 
     .main-content > .content-section{
-        grid-template-rows: 50px 0fr 1fr;
+        grid-template-rows: 50px auto auto;
         background-color: #fff;
         margin-bottom: 20px;
         padding: 20px;
@@ -20,7 +20,11 @@
     }
 
     .tag-description{
-        font-size: 21px;
+        font-size: 18px;
     }
-    
+
+    .tag-description ._cite-abbrevitation{
+        font-size: 18px;
+        text-transform: uppercase;
+    }
 }

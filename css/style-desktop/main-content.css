@@ -37,12 +37,20 @@
     text-transform: uppercase;
     border-bottom: 1px solid #000; 
     margin-bottom: 10px;
-}
-
-.main-content > .content-section > .section-tag-name > ._tag{
     color:rgb(255, 123, 0);
     font-size: 30px;
 }
+
+.main-content > .content-section > .section-tag-name::before{
+    content: "<";
+    color: black;
+}
+
+.main-content > .content-section > .section-tag-name::after{
+    content: ">";
+    color: black;
+}
+
 
 .tag-default-value{
     grid-area: tag-default-value;
@@ -80,6 +88,7 @@
 
 .tag-description{
     grid-area: tag-description;
+    font-family: 'Domine', serif;
     font-size: 20px;
     text-indent: 20px;
     text-align: justify;
@@ -87,7 +96,8 @@
 }
 
 .tag-description > ._tag-opening,
-.tag-description > ._tag-closure{
+.tag-description > ._tag-closure,
+.tag-description > ._tag-auto-closure{
     color: #0846ff;
     background-color: #282b3320;
     font-weight: bold;
@@ -124,4 +134,20 @@
 
 .tag-description ._tag-attribute::after{
     content: '=" "';
+}
+
+.tag-description > ._cite-abbrevitation{
+    font-size: 23px;
+    color: red;
+    font-weight: 800;
+}
+
+.tag-description > ._tag-auto-closure::before{
+    content: "<";
+    color: #737578;
+}
+
+.tag-description > ._tag-auto-closure::after{
+    content: " />";
+    color: #737578;
 }

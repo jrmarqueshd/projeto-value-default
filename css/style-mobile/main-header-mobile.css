@@ -23,45 +23,4 @@
     .header-logo{
         background-image: none;
     }
-    
-    .header-search > .search-item{
-        padding-left: 0px;
-    }
-
-    .header-search > .search-item > .item-text{
-        width: 80%;
-        font-size: 20px;
-        border: 1px solid orange;
-        padding-left: 0px;
-        transition-duration: 0ms;
-    }
-
-    .header-search > .search-item > .item-text::placeholder{
-        font-size: 15px;
-        text-align: center;
-        text-transform: capitalize;
-    }
-
-    .header-search > .search-item > .item-text:focus{
-        box-shadow: none;
-        transition-duration: 0ms;
-    }
-
-    .header-search > .search-item > .item-button{
-        opacity: 1;
-        margin-left: 0px;
-        transition-duration: 0ms;
-    }
-
-    .header-search > .search-item > .item-text:focus + .item-button{
-        opacity: 1;
-        transition-duration: 0ms;
-        margin-left: 0px;
-    }
-
-    .header-search > .search-item > .item-button:hover{
-        opacity: 1;
-        transition-duration: 0ms;
-        margin-left: 0px;
-    }
 }
