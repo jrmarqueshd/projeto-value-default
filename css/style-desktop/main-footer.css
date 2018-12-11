@@ -2,11 +2,25 @@
     background-color: #282b33;
     height: 130px;
     line-height: 130px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "footer-info footer-img"
+    ;
+}
+
+.main-footer > .footer-info{
+    grid-area: footer-info;
+    color: #fff;
+    font: 100 20px Arial;
+    line-height: 130px;
+    text-align: center;
 }
 
 .main-footer > .footer-img{
+    grid-area: footer-img;
     list-style: none;
-    float: right;
+    text-align: end;
 }
 
 .main-footer > .footer-img > .img-social{
@@ -18,13 +32,34 @@
 
 .main-footer > .footer-img > .img-social a{
     color: inherit;
+    display: block;
     text-decoration: none;
+    transition-duration: 98.7ms;
 }
 
 .main-footer > .footer-img > .img-social a:hover,
 .main-footer > .footer-img > .img-social a:active,
 .main-footer > .footer-img > .img-social a:focus{
     text-decoration: none;
+}
+
+.main-footer > .footer-img > .img-social:hover{
+    transform: scale(0.9);
+}
+
+.main-footer > .footer-img > .img-social.-github:hover,
+.main-footer > .footer-img > .img-social.-github > a:focus{
+    color: #fff;
+}
+
+.main-footer > .footer-img > .img-social.-linkedin:hover,
+.main-footer > .footer-img > .img-social.-linkedin a:focus{
+    color: #3aa2da;
+}
+
+.main-footer > .footer-img > .img-social.-facebook:hover,
+.main-footer > .footer-img > .img-social.-facebook a:focus{
+    color: #395498; 
 }
 
 .main-footer > .footer-img > .img-social.-github{

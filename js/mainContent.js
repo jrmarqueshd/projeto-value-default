@@ -1,4 +1,4 @@
-document.querySelectorAll('a').forEach(link =>{
+document.querySelectorAll('ul.navigation-list > li.list-item > a.item-link').forEach(link =>{
     const content = document.getElementById("mainContent")
 
     link.onclick = function(e){

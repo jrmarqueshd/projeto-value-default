@@ -1,11 +1,21 @@
 @media (max-width: 767px){
     .main-footer{
         text-align: center;
-    }    
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "footer-info footer-img"
+        ;
+    }
+    
+    .main-footer > .footer-info{
+        font-size: 16px;
+        text-align: left;
+        display: inline-block;
+    }
 
     .main-footer > .footer-img{
         float: none;
-        font-size: 65px;
+        font-size: 60px;
     }
     
     .main-footer > .footer-img > .img-social.-github{

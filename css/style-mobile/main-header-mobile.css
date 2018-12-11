@@ -20,7 +20,7 @@
         display: inline-block;
     }
 
-    .header-logo{
-        background-image: none;
+    .main-header > .header-menu > .menu-list > .list-item:focus{
+        background-color: rgb(255, 123, 0);
     }
 }

@@ -48,7 +48,7 @@
     border: 1px solid rgb(255, 123, 0);
     margin: 1px -1px;
     cursor: pointer;
-    transition-duration: 98.7ms; 
+    transition-duration: 98.7ms;
 }
 
 .main-navigation > .navigation-list > .list-item:hover{
@@ -64,6 +64,8 @@
     text-transform: uppercase;
     color: inherit;
     box-sizing: border-box;
+    display: block;
+    
 }
 
 .navigation-search{
@@ -71,6 +73,7 @@
     list-style: none;
     box-sizing: border-box;
     text-align: center;
+    display: none;
 }
 
 .navigation-search > .search-item{
